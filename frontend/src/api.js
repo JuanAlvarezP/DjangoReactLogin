@@ -1,10 +1,10 @@
 import axios from "axios";
 import { ACCESS_TOKEN } from "./constants";
 
-const apiUrl = "/choreo-apis/djangoreacttask/backend/v1"
+const apiUrl = "https://1531917f-8811-4f82-a776-1e99d742cacf-dev.e1-us-east-azure.choreoapis.dev/djangoreacttask/backend/v1"
 
 const api = axios.create({
-  baseURL: import.meta.env.VITE_API_URL ? import.meta.env.VITE_API_URL : apiUrl
+  baseURL: import.meta.env.VITE_API_URL ? import.meta.env.VITE_API_URL : apiUrl,
 });
 
 api.interceptors.request.use(
